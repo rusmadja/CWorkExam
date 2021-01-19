@@ -9,7 +9,9 @@
 
 
 /**
- * @brief   
+ * @brief   this struct is container (Stack)
+ *          there are an pointer on the last Item in Stack and size
+ *          the last Item have an pointer onto its previous Item ...
 */
 typedef struct Stack_t
 {

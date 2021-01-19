@@ -68,35 +68,35 @@ $(function() {
 <a href="_stack_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_item_8h.html">Item.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_stack__t.html">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_stack__t.html">Stack_t</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="struct_item__t.html">Item</a> *lastItem;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">size_t</span> stackSize;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_stack_8h.html#af485dab738806ae8f0ecb0aefe14c314">   19</a></span>&#160;}<a class="code" href="_stack_8h.html#af485dab738806ae8f0ecb0aefe14c314">Stack</a>, *<a class="code" href="struct_stack__t.html">pStack</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_stack__t.html">   16</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_stack__t.html">Stack_t</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="struct_item__t.html">Item</a> *lastItem;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">size_t</span> stackSize;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_stack_8h.html#af485dab738806ae8f0ecb0aefe14c314">   21</a></span>&#160;}<a class="code" href="_stack_8h.html#af485dab738806ae8f0ecb0aefe14c314">Stack</a>, *<a class="code" href="struct_stack__t.html">pStack</a>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<a class="code" href="struct_stack__t.html">Stack</a> *<a class="code" href="_stack_8h.html#a07024c474ffedf71428b1af472fc58d9">CreateStack</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_stack_8h.html#ac2565fa4934a779402996e4007598fcc">DeleteStack</a>(<a class="code" href="struct_stack__t.html">Stack</a> *stack);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_stack_8h.html#af0e1e9e2ebecae07889bf72406744fd4">StackPush</a>(<a class="code" href="struct_stack__t.html">Stack</a> *stack, <a class="code" href="struct_item__t.html">Item</a> *newItem);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="struct_item__t.html">Item</a> <a class="code" href="_stack_8h.html#ae91e8bfc14ab915fb3088c8f9ec466e5">StackPop</a>(<a class="code" href="struct_stack__t.html">Stack</a> *stack);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="_stack_8h.html#a892e08886b299bc650f5ca2b464782d9">StackSize</a>(<a class="code" href="struct_stack__t.html">Stack</a> *stack);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="_stack_8h.html#a28d40109ceba468a664376462a0e8301">   64</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_stack_8h.html#a28d40109ceba468a664376462a0e8301">StackPrint</a>(<a class="code" href="struct_stack__t.html">Stack</a> *stack);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_stack_8h.html#a175ce5fccf4a95ec45814e495f750b77">StackGetLastError</a>(<a class="code" href="struct_stack__t.html">Stack</a> *stack);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<a class="code" href="struct_stack__t.html">Stack</a> *<a class="code" href="_stack_8h.html#a07024c474ffedf71428b1af472fc58d9">CreateStack</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_stack_8h.html#ac2565fa4934a779402996e4007598fcc">DeleteStack</a>(<a class="code" href="struct_stack__t.html">Stack</a> *stack);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_stack_8h.html#af0e1e9e2ebecae07889bf72406744fd4">StackPush</a>(<a class="code" href="struct_stack__t.html">Stack</a> *stack, <a class="code" href="struct_item__t.html">Item</a> *newItem);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="struct_item__t.html">Item</a> <a class="code" href="_stack_8h.html#ae91e8bfc14ab915fb3088c8f9ec466e5">StackPop</a>(<a class="code" href="struct_stack__t.html">Stack</a> *stack);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="_stack_8h.html#a892e08886b299bc650f5ca2b464782d9">StackSize</a>(<a class="code" href="struct_stack__t.html">Stack</a> *stack);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="_stack_8h.html#a28d40109ceba468a664376462a0e8301">   66</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_stack_8h.html#a28d40109ceba468a664376462a0e8301">StackPrint</a>(<a class="code" href="struct_stack__t.html">Stack</a> *stack);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_stack_8h.html#a175ce5fccf4a95ec45814e495f750b77">StackGetLastError</a>(<a class="code" href="struct_stack__t.html">Stack</a> *stack);</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="a_item_8h_html"><div class="ttname"><a href="_item_8h.html">Item.h</a></div></div>
-<div class="ttc" id="astruct_stack__t_html"><div class="ttname"><a href="struct_stack__t.html">Stack_t</a></div><div class="ttdef"><b>Definition:</b> Stack.h:15</div></div>
+<div class="ttc" id="astruct_stack__t_html"><div class="ttname"><a href="struct_stack__t.html">Stack_t</a></div><div class="ttdoc">this struct is container (Stack) there are an pointer on the last Item in Stack and size the last Ite...</div><div class="ttdef"><b>Definition:</b> Stack.h:17</div></div>
 <div class="ttc" id="a_stack_8h_html_ac2565fa4934a779402996e4007598fcc"><div class="ttname"><a href="_stack_8h.html#ac2565fa4934a779402996e4007598fcc">DeleteStack</a></div><div class="ttdeci">void DeleteStack(Stack *stack)</div><div class="ttdoc">The function delete everything in the container.</div><div class="ttdef"><b>Definition:</b> Stack.c:15</div></div>
 <div class="ttc" id="a_stack_8h_html_a892e08886b299bc650f5ca2b464782d9"><div class="ttname"><a href="_stack_8h.html#a892e08886b299bc650f5ca2b464782d9">StackSize</a></div><div class="ttdeci">size_t StackSize(Stack *stack)</div><div class="ttdoc">The function give the size of stack.</div><div class="ttdef"><b>Definition:</b> Stack.c:62</div></div>
-<div class="ttc" id="a_stack_8h_html_af485dab738806ae8f0ecb0aefe14c314"><div class="ttname"><a href="_stack_8h.html#af485dab738806ae8f0ecb0aefe14c314">Stack</a></div><div class="ttdeci">struct Stack_t Stack</div></div>
-<div class="ttc" id="astruct_item__t_html"><div class="ttname"><a href="struct_item__t.html">Item_t</a></div><div class="ttdef"><b>Definition:</b> Item.h:13</div></div>
+<div class="ttc" id="a_stack_8h_html_af485dab738806ae8f0ecb0aefe14c314"><div class="ttname"><a href="_stack_8h.html#af485dab738806ae8f0ecb0aefe14c314">Stack</a></div><div class="ttdeci">struct Stack_t Stack</div><div class="ttdoc">this struct is container (Stack) there are an pointer on the last Item in Stack and size the last Ite...</div></div>
+<div class="ttc" id="astruct_item__t_html"><div class="ttname"><a href="struct_item__t.html">Item_t</a></div><div class="ttdoc">this struct is an item into stack there is an pointer on previous Item that will be in the stack and ...</div><div class="ttdef"><b>Definition:</b> Item.h:15</div></div>
 <div class="ttc" id="a_stack_8h_html_a07024c474ffedf71428b1af472fc58d9"><div class="ttname"><a href="_stack_8h.html#a07024c474ffedf71428b1af472fc58d9">CreateStack</a></div><div class="ttdeci">Stack * CreateStack()</div><div class="ttdoc">The function create an empty container.</div><div class="ttdef"><b>Definition:</b> Stack.c:6</div></div>
 <div class="ttc" id="a_stack_8h_html_ae91e8bfc14ab915fb3088c8f9ec466e5"><div class="ttname"><a href="_stack_8h.html#ae91e8bfc14ab915fb3088c8f9ec466e5">StackPop</a></div><div class="ttdeci">Item StackPop(Stack *stack)</div><div class="ttdoc">The function extract the last member.</div><div class="ttdef"><b>Definition:</b> Stack.c:42</div></div>
 <div class="ttc" id="a_stack_8h_html_af0e1e9e2ebecae07889bf72406744fd4"><div class="ttname"><a href="_stack_8h.html#af0e1e9e2ebecae07889bf72406744fd4">StackPush</a></div><div class="ttdeci">void StackPush(Stack *stack, Item *newItem)</div><div class="ttdoc">The function add member into stack container.</div><div class="ttdef"><b>Definition:</b> Stack.c:28</div></div>

@@ -4,22 +4,22 @@
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_item__t}{Item\+\_\+t}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em this struct is an item into stack there is an pointer on previous Item that will be in the stack and value of this Item that we will adding into stack \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{_item_8h_ae30ecc210bab93a66361e537f6f7959a}\label{_item_8h_ae30ecc210bab93a66361e537f6f7959a}} 
-typedef struct \mbox{\hyperlink{struct_item__t}{Item\+\_\+t}} {\bfseries Item}
-\end{DoxyCompactItemize}
+typedef struct \mbox{\hyperlink{struct_item__t}{Item\+\_\+t}} \mbox{\hyperlink{_item_8h_ae30ecc210bab93a66361e537f6f7959a}{Item}}
+\begin{DoxyCompactList}\small\item\em this struct is an item into stack there is an pointer on previous Item that will be in the stack and value of this Item that we will adding into stack \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{struct_item__t}{Item}} $\ast$ \mbox{\hyperlink{_item_8h_acabf7f39de31e52096fe6f9455e303ca}{Create\+Item}} (void $\ast$value)
-\item 
-void \mbox{\hyperlink{_item_8h_af364b7779d93d2b9b817eadea6817d30}{Delete\+Item}} (\mbox{\hyperlink{struct_item__t}{Item}} $\ast$value)
-\item 
-void \mbox{\hyperlink{_item_8h_a60ae72ab8f5e4e9b91715b04e28d1c59}{Update\+Previous\+Value\+Item}} (\mbox{\hyperlink{struct_item__t}{Item}} $\ast$actual, \mbox{\hyperlink{struct_item__t}{Item}} $\ast$next\+Value)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{_item_8h_ae30ecc210bab93a66361e537f6f7959a}{Item}} $\ast$ \mbox{\hyperlink{_item_8h_acabf7f39de31e52096fe6f9455e303ca}{Create\+Item}} (void $\ast$value)
+\begin{DoxyCompactList}\small\item\em the function create Item pointer an allocate \char`\"{}makom\char`\"{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_item_8h_af364b7779d93d2b9b817eadea6817d30}{Delete\+Item}} (\mbox{\hyperlink{_item_8h_ae30ecc210bab93a66361e537f6f7959a}{Item}} $\ast$value)
+\begin{DoxyCompactList}\small\item\em the function delete Item who located at address \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_item_8h_a60ae72ab8f5e4e9b91715b04e28d1c59}{Update\+Previous\+Value\+Item}} (\mbox{\hyperlink{_item_8h_ae30ecc210bab93a66361e537f6f7959a}{Item}} $\ast$actual, \mbox{\hyperlink{_item_8h_ae30ecc210bab93a66361e537f6f7959a}{Item}} $\ast$next\+Value)
+\begin{DoxyCompactList}\small\item\em the function update the address of previous value of the next\+Value the Previous address of the next\+Value will be the actual value \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -30,37 +30,49 @@ Item Library
 \index{Item.h@{Item.h}!CreateItem@{CreateItem}}
 \index{CreateItem@{CreateItem}!Item.h@{Item.h}}
 \doxysubsubsection{\texorpdfstring{CreateItem()}{CreateItem()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_item__t}{Item}}$\ast$ Create\+Item (\begin{DoxyParamCaption}\item[{void $\ast$}]{value }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{_item_8h_ae30ecc210bab93a66361e537f6f7959a}{Item}}$\ast$ Create\+Item (\begin{DoxyParamCaption}\item[{void $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+the function create Item pointer an allocate \char`\"{}makom\char`\"{} 
 
 
 \begin{DoxyParams}{Parameters}
-{\em value} & \\
+{\em value} & the item value \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-
+pointer to Item That will created 
 \end{DoxyReturn}
 \mbox{\Hypertarget{_item_8h_af364b7779d93d2b9b817eadea6817d30}\label{_item_8h_af364b7779d93d2b9b817eadea6817d30}} 
 \index{Item.h@{Item.h}!DeleteItem@{DeleteItem}}
 \index{DeleteItem@{DeleteItem}!Item.h@{Item.h}}
 \doxysubsubsection{\texorpdfstring{DeleteItem()}{DeleteItem()}}
-{\footnotesize\ttfamily void Delete\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_item__t}{Item}} $\ast$}]{value }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Delete\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_item_8h_ae30ecc210bab93a66361e537f6f7959a}{Item}} $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+the function delete Item who located at address 
 
 
 \begin{DoxyParams}{Parameters}
-{\em value} & \\
+{\em value} & address of the item that will be delete \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{_item_8h_a60ae72ab8f5e4e9b91715b04e28d1c59}\label{_item_8h_a60ae72ab8f5e4e9b91715b04e28d1c59}} 
 \index{Item.h@{Item.h}!UpdatePreviousValueItem@{UpdatePreviousValueItem}}
 \index{UpdatePreviousValueItem@{UpdatePreviousValueItem}!Item.h@{Item.h}}
 \doxysubsubsection{\texorpdfstring{UpdatePreviousValueItem()}{UpdatePreviousValueItem()}}
-{\footnotesize\ttfamily void Update\+Previous\+Value\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_item__t}{Item}} $\ast$}]{actual,  }\item[{\mbox{\hyperlink{struct_item__t}{Item}} $\ast$}]{next\+Value }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Update\+Previous\+Value\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_item_8h_ae30ecc210bab93a66361e537f6f7959a}{Item}} $\ast$}]{actual,  }\item[{\mbox{\hyperlink{_item_8h_ae30ecc210bab93a66361e537f6f7959a}{Item}} $\ast$}]{next\+Value }\end{DoxyParamCaption})}
+
+
+
+the function update the address of previous value of the next\+Value the Previous address of the next\+Value will be the actual value 
 
 
 \begin{DoxyParams}{Parameters}
-{\em actual} & \\
+{\em actual} & address to update into next\+Value-\/$>$previous\+Item \\
 \hline
-{\em next\+Value} & \\
+{\em next\+Value} & the address of Item That will be change \\
 \hline
 \end{DoxyParams}

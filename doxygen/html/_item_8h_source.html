@@ -67,24 +67,25 @@ $(function() {
 <div class="contents">
 <a href="_item_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_item__t.html">   12</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_item__t.html">Item_t</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> *previousValue;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> *value;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}<a class="code" href="struct_item__t.html">Item</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_item__t.html">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_item__t.html">Item_t</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> *previousItem;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> *value;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<a class="code" href="struct_item__t.html">Item</a>* <a class="code" href="_item_8h.html#acabf7f39de31e52096fe6f9455e303ca">CreateItem</a>(<span class="keywordtype">void</span> *value);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_item_8h.html#af364b7779d93d2b9b817eadea6817d30">DeleteItem</a>(<a class="code" href="struct_item__t.html">Item</a>* value);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_item_8h.html#a60ae72ab8f5e4e9b91715b04e28d1c59">UpdatePreviousValueItem</a>(<a class="code" href="struct_item__t.html">Item</a> *actual, <a class="code" href="struct_item__t.html">Item</a> *nextValue);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_item_8h.html#ae30ecc210bab93a66361e537f6f7959a">   19</a></span>&#160;}<a class="code" href="_item_8h.html#ae30ecc210bab93a66361e537f6f7959a">Item</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<a class="code" href="struct_item__t.html">Item</a>* <a class="code" href="_item_8h.html#acabf7f39de31e52096fe6f9455e303ca">CreateItem</a>(<span class="keywordtype">void</span> *value);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_item_8h.html#af364b7779d93d2b9b817eadea6817d30">DeleteItem</a>(<a class="code" href="struct_item__t.html">Item</a>* value);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_item_8h.html#a60ae72ab8f5e4e9b91715b04e28d1c59">UpdatePreviousValueItem</a>(<a class="code" href="struct_item__t.html">Item</a> *actual, <a class="code" href="struct_item__t.html">Item</a> *nextValue);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="a_item_8h_html_a60ae72ab8f5e4e9b91715b04e28d1c59"><div class="ttname"><a href="_item_8h.html#a60ae72ab8f5e4e9b91715b04e28d1c59">UpdatePreviousValueItem</a></div><div class="ttdeci">void UpdatePreviousValueItem(Item *actual, Item *nextValue)</div><div class="ttdef"><b>Definition:</b> Item.c:19</div></div>
-<div class="ttc" id="a_item_8h_html_af364b7779d93d2b9b817eadea6817d30"><div class="ttname"><a href="_item_8h.html#af364b7779d93d2b9b817eadea6817d30">DeleteItem</a></div><div class="ttdeci">void DeleteItem(Item *value)</div><div class="ttdef"><b>Definition:</b> Item.c:14</div></div>
-<div class="ttc" id="astruct_item__t_html"><div class="ttname"><a href="struct_item__t.html">Item_t</a></div><div class="ttdef"><b>Definition:</b> Item.h:13</div></div>
-<div class="ttc" id="a_item_8h_html_acabf7f39de31e52096fe6f9455e303ca"><div class="ttname"><a href="_item_8h.html#acabf7f39de31e52096fe6f9455e303ca">CreateItem</a></div><div class="ttdeci">Item * CreateItem(void *value)</div><div class="ttdef"><b>Definition:</b> Item.c:5</div></div>
+<div class="ttc" id="a_item_8h_html_a60ae72ab8f5e4e9b91715b04e28d1c59"><div class="ttname"><a href="_item_8h.html#a60ae72ab8f5e4e9b91715b04e28d1c59">UpdatePreviousValueItem</a></div><div class="ttdeci">void UpdatePreviousValueItem(Item *actual, Item *nextValue)</div><div class="ttdoc">the function update the address of previous value of the nextValue the Previous address of the nextVa...</div><div class="ttdef"><b>Definition:</b> Item.c:19</div></div>
+<div class="ttc" id="a_item_8h_html_ae30ecc210bab93a66361e537f6f7959a"><div class="ttname"><a href="_item_8h.html#ae30ecc210bab93a66361e537f6f7959a">Item</a></div><div class="ttdeci">struct Item_t Item</div><div class="ttdoc">this struct is an item into stack there is an pointer on previous Item that will be in the stack and ...</div></div>
+<div class="ttc" id="a_item_8h_html_af364b7779d93d2b9b817eadea6817d30"><div class="ttname"><a href="_item_8h.html#af364b7779d93d2b9b817eadea6817d30">DeleteItem</a></div><div class="ttdeci">void DeleteItem(Item *value)</div><div class="ttdoc">the function delete Item who located at address</div><div class="ttdef"><b>Definition:</b> Item.c:14</div></div>
+<div class="ttc" id="astruct_item__t_html"><div class="ttname"><a href="struct_item__t.html">Item_t</a></div><div class="ttdoc">this struct is an item into stack there is an pointer on previous Item that will be in the stack and ...</div><div class="ttdef"><b>Definition:</b> Item.h:15</div></div>
+<div class="ttc" id="a_item_8h_html_acabf7f39de31e52096fe6f9455e303ca"><div class="ttname"><a href="_item_8h.html#acabf7f39de31e52096fe6f9455e303ca">CreateItem</a></div><div class="ttdeci">Item * CreateItem(void *value)</div><div class="ttdoc">the function create Item pointer an allocate &quot;makom&quot;</div><div class="ttdef"><b>Definition:</b> Item.c:5</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

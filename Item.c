@@ -6,7 +6,7 @@ Item* CreateItem(void* value)
 {
     Item* newItem = malloc(sizeof(Item));
     newItem->value = value;
-    newItem->previousValue = NULL;
+    newItem->previousItem = NULL;
 
     return newItem;
 }
@@ -18,5 +18,5 @@ void DeleteItem(Item* value)
 
 void UpdatePreviousValueItem(Item *actual, Item *nextValue)
 {
-    nextValue->previousValue = actual;
+    nextValue->previousItem = actual;
 }

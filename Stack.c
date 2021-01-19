@@ -50,10 +50,10 @@ Item StackPop(Stack *stack)
     }
     else
     {
-        item->previousValue = stack->lastItem->previousValue;
+        item->previousItem = stack->lastItem->previousItem;
         item->value = stack->lastItem->value;
 
-        stack->lastItem = item->previousValue;
+        stack->lastItem = item->previousItem;
         stack->stackSize -= 1;
         return *item;
     }
