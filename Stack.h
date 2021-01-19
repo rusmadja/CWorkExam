@@ -66,8 +66,8 @@ size_t StackSize(Stack *stack);
 void StackPrint(Stack *stack);
 
 /**
- * @brief 
+ * @brief           return if the stack is empty or not
  * @param stack 
- * @return 
+ * @return          
  */
 int StackGetLastError(Stack *stack);
