@@ -1,64 +1,24 @@
 #include <stdio.h>
-/**
- * @brief 
- * @param singlePointer 
- * @param doublePointer 
- * @return 
-*/
-unsigned long long MemParse(char *singlePointer, char **doublePointer)
+#include <limits.h>
+#include "Stack.h"
+
+
+int main(void)
 {
-    return 0;
-}
+    short shortValue = SHRT_MAX;
+    int intValue = INT_MAX;
+    long longValue = LONG_MAX;
+    char charValue = CHAR_MAX;
 
-int main()
-{
-    if (1)
-    {
-        printf("Hello Assaf!\n");
-    }
-    else
-    {
-
-    }
-    do
-    {
-
-    } while (1);
-
-    int a = 1;
-    int b = 1;
-    int c = a + b;
-    int d = a == b;
-    a++;
-
-    switch (a)
-    {
-    case 1:
-        break;
-
-    case 2:
-        break;
-    }
-
-    for (size_t i = 0; i < 10; i++)
-    {
-
-    }
-    sizeof(int);
-    int *test = &a;
-
-    struct Reouv
-    {
-        int a;
-        int b;
-    };
-
-    struct Reouv reouv;
-    reouv.a = 2;
-    reouv.b = 2;
+    Stack *stack = CreateStack();
 
 
-    printf("Hello Assaf!\n");
+    Item* item1= CreateItem(&shortValue);
+    Item* item2= CreateItem(&intValue);
+    Item* item3= CreateItem(&longValue);
+    Item* item4= CreateItem(&charValue);
+
+
 
     return 0;
 }

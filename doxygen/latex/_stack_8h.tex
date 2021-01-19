@@ -1,0 +1,153 @@
+\hypertarget{_stack_8h}{}\doxysection{Stack.\+h File Reference}
+\label{_stack_8h}\index{Stack.h@{Stack.h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Item.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_stack__t}{Stack\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}\label{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}} 
+typedef struct \mbox{\hyperlink{struct_stack__t}{Stack\+\_\+t}} \mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}}
+\begin{DoxyCompactList}\small\item\em ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_stack_8h_a7fbfa1660ad116a393a9a0d0dff1289a}\label{_stack_8h_a7fbfa1660ad116a393a9a0d0dff1289a}} 
+typedef struct \mbox{\hyperlink{struct_stack__t}{Stack\+\_\+t}} $\ast$ {\bfseries p\+Stack}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$ \mbox{\hyperlink{_stack_8h_a07024c474ffedf71428b1af472fc58d9}{Create\+Stack}} ()
+\begin{DoxyCompactList}\small\item\em The function create an empty container. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_stack_8h_ac2565fa4934a779402996e4007598fcc}{Delete\+Stack}} (\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em The function delete everything in the container. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_stack_8h_af0e1e9e2ebecae07889bf72406744fd4}{Stack\+Push}} (\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$stack, \mbox{\hyperlink{struct_item__t}{Item}} $\ast$new\+Item)
+\begin{DoxyCompactList}\small\item\em The function add member into stack container. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_item__t}{Item}} \mbox{\hyperlink{_stack_8h_ae91e8bfc14ab915fb3088c8f9ec466e5}{Stack\+Pop}} (\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em The function extract the last member. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{_stack_8h_a892e08886b299bc650f5ca2b464782d9}{Stack\+Size}} (\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em The function give the size of stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_stack_8h_a28d40109ceba468a664376462a0e8301}{Stack\+Print}} (\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em The function print the entire stack. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_stack_8h_a175ce5fccf4a95ec45814e495f750b77}{Stack\+Get\+Last\+Error}} (\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$stack)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stack Library 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_stack_8h_a07024c474ffedf71428b1af472fc58d9}\label{_stack_8h_a07024c474ffedf71428b1af472fc58d9}} 
+\index{Stack.h@{Stack.h}!CreateStack@{CreateStack}}
+\index{CreateStack@{CreateStack}!Stack.h@{Stack.h}}
+\doxysubsubsection{\texorpdfstring{CreateStack()}{CreateStack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}}$\ast$ Create\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function create an empty container. 
+
+\begin{DoxyReturn}{Returns}
+the empty stack that was created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_stack_8h_ac2565fa4934a779402996e4007598fcc}\label{_stack_8h_ac2565fa4934a779402996e4007598fcc}} 
+\index{Stack.h@{Stack.h}!DeleteStack@{DeleteStack}}
+\index{DeleteStack@{DeleteStack}!Stack.h@{Stack.h}}
+\doxysubsubsection{\texorpdfstring{DeleteStack()}{DeleteStack()}}
+{\footnotesize\ttfamily void Delete\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+The function delete everything in the container. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & the stack to delete\\
+\hline
+\end{DoxyParams}
+Assumption\+: this function delete what is in the container and leave it empty but do not delete the container \mbox{\Hypertarget{_stack_8h_a175ce5fccf4a95ec45814e495f750b77}\label{_stack_8h_a175ce5fccf4a95ec45814e495f750b77}} 
+\index{Stack.h@{Stack.h}!StackGetLastError@{StackGetLastError}}
+\index{StackGetLastError@{StackGetLastError}!Stack.h@{Stack.h}}
+\doxysubsubsection{\texorpdfstring{StackGetLastError()}{StackGetLastError()}}
+{\footnotesize\ttfamily int Stack\+Get\+Last\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{_stack_8h_ae91e8bfc14ab915fb3088c8f9ec466e5}\label{_stack_8h_ae91e8bfc14ab915fb3088c8f9ec466e5}} 
+\index{Stack.h@{Stack.h}!StackPop@{StackPop}}
+\index{StackPop@{StackPop}!Stack.h@{Stack.h}}
+\doxysubsubsection{\texorpdfstring{StackPop()}{StackPop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_item__t}{Item}} Stack\+Pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+The function extract the last member. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & the container \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the last Item that was added 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_stack_8h_a28d40109ceba468a664376462a0e8301}\label{_stack_8h_a28d40109ceba468a664376462a0e8301}} 
+\index{Stack.h@{Stack.h}!StackPrint@{StackPrint}}
+\index{StackPrint@{StackPrint}!Stack.h@{Stack.h}}
+\doxysubsubsection{\texorpdfstring{StackPrint()}{StackPrint()}}
+{\footnotesize\ttfamily void Stack\+Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+The function print the entire stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & the container who will print \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_stack_8h_af0e1e9e2ebecae07889bf72406744fd4}\label{_stack_8h_af0e1e9e2ebecae07889bf72406744fd4}} 
+\index{Stack.h@{Stack.h}!StackPush@{StackPush}}
+\index{StackPush@{StackPush}!Stack.h@{Stack.h}}
+\doxysubsubsection{\texorpdfstring{StackPush()}{StackPush()}}
+{\footnotesize\ttfamily void Stack\+Push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$}]{stack,  }\item[{\mbox{\hyperlink{struct_item__t}{Item}} $\ast$}]{new\+Item }\end{DoxyParamCaption})}
+
+
+
+The function add member into stack container. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & the stack where we will add the item \\
+\hline
+{\em new\+Item} & the item will be adding to the stack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_stack_8h_a892e08886b299bc650f5ca2b464782d9}\label{_stack_8h_a892e08886b299bc650f5ca2b464782d9}} 
+\index{Stack.h@{Stack.h}!StackSize@{StackSize}}
+\index{StackSize@{StackSize}!Stack.h@{Stack.h}}
+\doxysubsubsection{\texorpdfstring{StackSize()}{StackSize()}}
+{\footnotesize\ttfamily size\+\_\+t Stack\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+The function give the size of stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & the container \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size\+\_\+t of numbers items in the stack 
+\end{DoxyReturn}

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['main_4',['main',['../_exam_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'Exam.c']]],
-  ['memparse_5',['MemParse',['../_exam_8c.html#a670d090ff89abd457a3377de2fe88779',1,'Exam.c']]]
+  ['createitem_19',['CreateItem',['../_item_8h.html#acabf7f39de31e52096fe6f9455e303ca',1,'Item.c']]],
+  ['createstack_20',['CreateStack',['../_stack_8h.html#a07024c474ffedf71428b1af472fc58d9',1,'Stack.c']]]
 ];
